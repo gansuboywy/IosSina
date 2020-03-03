@@ -18,7 +18,7 @@
 		94F9F988240D0AAD006C7EF2 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F9F987240D0AAD006C7EF2 /* ProfileViewController.swift */; };
 		94F9F98A240D172C006C7EF2 /* MainViewControllerByMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F9F989240D172C006C7EF2 /* MainViewControllerByMethod.swift */; };
 		94F9F98E240D1F1C006C7EF2 /* MainViewControllerByJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F9F98D240D1F1C006C7EF2 /* MainViewControllerByJson.swift */; };
-		94F9F990240D441C006C7EF2 /* MainVCSettings.json in Resources */ = {isa = PBXBuildFile; fileRef = 94F9F98F240D441C006C7EF2 /* MainVCSettings.json */; };
+		94F9F995240D51B3006C7EF2 /* MainVCSettings.json in Resources */ = {isa = PBXBuildFile; fileRef = 94F9F994240D51B3006C7EF2 /* MainVCSettings.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,7 +35,7 @@
 		94F9F987240D0AAD006C7EF2 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		94F9F989240D172C006C7EF2 /* MainViewControllerByMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewControllerByMethod.swift; sourceTree = "<group>"; };
 		94F9F98D240D1F1C006C7EF2 /* MainViewControllerByJson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewControllerByJson.swift; sourceTree = "<group>"; };
-		94F9F98F240D441C006C7EF2 /* MainVCSettings.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MainVCSettings.json; sourceTree = "<group>"; };
+		94F9F994240D51B3006C7EF2 /* MainVCSettings.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MainVCSettings.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,17 +144,9 @@
 		94F9F97D240D0192006C7EF2 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
-				94F9F98F240D441C006C7EF2 /* MainVCSettings.json */,
-				94F9F97E240D0192006C7EF2 /* Icon */,
+				94F9F994240D51B3006C7EF2 /* MainVCSettings.json */,
 			);
 			path = Resource;
-			sourceTree = "<group>";
-		};
-		94F9F97E240D0192006C7EF2 /* Icon */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Icon;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -216,8 +208,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				94F9F96B240CF3E7006C7EF2 /* LaunchScreen.storyboard in Resources */,
+				94F9F995240D51B3006C7EF2 /* MainVCSettings.json in Resources */,
 				94F9F968240CF3E7006C7EF2 /* Assets.xcassets in Resources */,
-				94F9F990240D441C006C7EF2 /* MainVCSettings.json in Resources */,
 				94F9F966240CF3E7006C7EF2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
