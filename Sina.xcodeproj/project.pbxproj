@@ -19,6 +19,12 @@
 		94F9F98A240D172C006C7EF2 /* MainViewControllerByMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F9F989240D172C006C7EF2 /* MainViewControllerByMethod.swift */; };
 		94F9F98E240D1F1C006C7EF2 /* MainViewControllerByJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F9F98D240D1F1C006C7EF2 /* MainViewControllerByJson.swift */; };
 		94F9F995240D51B3006C7EF2 /* MainVCSettings.json in Resources */ = {isa = PBXBuildFile; fileRef = 94F9F994240D51B3006C7EF2 /* MainVCSettings.json */; };
+		94F9F997240E940A006C7EF2 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F9F996240E940A006C7EF2 /* MainViewController.swift */; };
+		94F9F999240E992F006C7EF2 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94F9F998240E992F006C7EF2 /* Home.storyboard */; };
+		94F9F99B240E9976006C7EF2 /* Discover.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94F9F99A240E9976006C7EF2 /* Discover.storyboard */; };
+		94F9F99D240E999D006C7EF2 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94F9F99C240E999D006C7EF2 /* Profile.storyboard */; };
+		94F9F99F240E99DA006C7EF2 /* Message.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94F9F99E240E99DA006C7EF2 /* Message.storyboard */; };
+		94F9F9A2240E9D2B006C7EF2 /* New.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94F9F9A1240E9D2B006C7EF2 /* New.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +42,12 @@
 		94F9F989240D172C006C7EF2 /* MainViewControllerByMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewControllerByMethod.swift; sourceTree = "<group>"; };
 		94F9F98D240D1F1C006C7EF2 /* MainViewControllerByJson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewControllerByJson.swift; sourceTree = "<group>"; };
 		94F9F994240D51B3006C7EF2 /* MainVCSettings.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MainVCSettings.json; sourceTree = "<group>"; };
+		94F9F996240E940A006C7EF2 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		94F9F998240E992F006C7EF2 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		94F9F99A240E9976006C7EF2 /* Discover.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Discover.storyboard; sourceTree = "<group>"; };
+		94F9F99C240E999D006C7EF2 /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		94F9F99E240E99DA006C7EF2 /* Message.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Message.storyboard; sourceTree = "<group>"; };
+		94F9F9A1240E9D2B006C7EF2 /* New.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = New.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +80,7 @@
 		94F9F95D240CF3E6006C7EF2 /* Sina */ = {
 			isa = PBXGroup;
 			children = (
+				94F9F9A0240E9D14006C7EF2 /* New */,
 				94F9F97C240D00A0006C7EF2 /* Main */,
 				94F9F973240CF4F9006C7EF2 /* Comm */,
 				94F9F972240CF4E0006C7EF2 /* Base */,
@@ -102,6 +115,7 @@
 		94F9F974240CF503006C7EF2 /* Discover */ = {
 			isa = PBXGroup;
 			children = (
+				94F9F99A240E9976006C7EF2 /* Discover.storyboard */,
 				94F9F985240D0A8D006C7EF2 /* DiscoverViewController.swift */,
 			);
 			path = Discover;
@@ -110,6 +124,7 @@
 		94F9F975240CF511006C7EF2 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				94F9F99C240E999D006C7EF2 /* Profile.storyboard */,
 				94F9F987240D0AAD006C7EF2 /* ProfileViewController.swift */,
 			);
 			path = Profile;
@@ -118,6 +133,7 @@
 		94F9F976240CF521006C7EF2 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				94F9F998240E992F006C7EF2 /* Home.storyboard */,
 				94F9F981240D0A55006C7EF2 /* HomeViewController.swift */,
 			);
 			path = Home;
@@ -126,6 +142,7 @@
 		94F9F977240CF532006C7EF2 /* Message */ = {
 			isa = PBXGroup;
 			children = (
+				94F9F99E240E99DA006C7EF2 /* Message.storyboard */,
 				94F9F983240D0A73006C7EF2 /* MessageViewController.swift */,
 			);
 			path = Message;
@@ -137,6 +154,7 @@
 				94F9F97F240D041D006C7EF2 /* MainViewControllerByReflection.swift */,
 				94F9F989240D172C006C7EF2 /* MainViewControllerByMethod.swift */,
 				94F9F98D240D1F1C006C7EF2 /* MainViewControllerByJson.swift */,
+				94F9F996240E940A006C7EF2 /* MainViewController.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -147,6 +165,14 @@
 				94F9F994240D51B3006C7EF2 /* MainVCSettings.json */,
 			);
 			path = Resource;
+			sourceTree = "<group>";
+		};
+		94F9F9A0240E9D14006C7EF2 /* New */ = {
+			isa = PBXGroup;
+			children = (
+				94F9F9A1240E9D2B006C7EF2 /* New.storyboard */,
+			);
+			path = New;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -208,9 +234,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				94F9F96B240CF3E7006C7EF2 /* LaunchScreen.storyboard in Resources */,
+				94F9F999240E992F006C7EF2 /* Home.storyboard in Resources */,
 				94F9F995240D51B3006C7EF2 /* MainVCSettings.json in Resources */,
 				94F9F968240CF3E7006C7EF2 /* Assets.xcassets in Resources */,
 				94F9F966240CF3E7006C7EF2 /* Main.storyboard in Resources */,
+				94F9F9A2240E9D2B006C7EF2 /* New.storyboard in Resources */,
+				94F9F99D240E999D006C7EF2 /* Profile.storyboard in Resources */,
+				94F9F99F240E99DA006C7EF2 /* Message.storyboard in Resources */,
+				94F9F99B240E9976006C7EF2 /* Discover.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -227,6 +258,7 @@
 				94F9F980240D041D006C7EF2 /* MainViewControllerByReflection.swift in Sources */,
 				94F9F984240D0A73006C7EF2 /* MessageViewController.swift in Sources */,
 				94F9F982240D0A55006C7EF2 /* HomeViewController.swift in Sources */,
+				94F9F997240E940A006C7EF2 /* MainViewController.swift in Sources */,
 				94F9F98A240D172C006C7EF2 /* MainViewControllerByMethod.swift in Sources */,
 				94F9F986240D0A8D006C7EF2 /* DiscoverViewController.swift in Sources */,
 			);

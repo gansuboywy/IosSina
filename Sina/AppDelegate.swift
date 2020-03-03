@@ -21,12 +21,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // set color for all tab bar
         UITabBar.appearance().tintColor = UIColor.orange
         
-        /// instantiate window
-        window = UIWindow(frame: UIScreen.main.bounds)
-        window?.rootViewController = MainViewControllerByJson()
-
-        // make window to display
-        window?.makeKeyAndVisible()
+        /*
+         the following code is used to lunach screen by code
+         in this system, we will use storyboard to lunach screen,
+         so i comment the code below
+         */
+//        /// instantiate window
+//        window = UIWindow(frame: UIScreen.main.bounds)
+//        window?.rootViewController = MainViewController()
+//        // make window to display
+//        window?.makeKeyAndVisible()
 
         return true
     }
