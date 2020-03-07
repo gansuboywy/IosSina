@@ -25,6 +25,7 @@
 		94F9F99D240E999D006C7EF2 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94F9F99C240E999D006C7EF2 /* Profile.storyboard */; };
 		94F9F99F240E99DA006C7EF2 /* Message.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94F9F99E240E99DA006C7EF2 /* Message.storyboard */; };
 		94F9F9A2240E9D2B006C7EF2 /* New.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94F9F9A1240E9D2B006C7EF2 /* New.storyboard */; };
+		94F9F9A524113DAB006C7EF2 /* BaseUIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F9F9A424113DAB006C7EF2 /* BaseUIButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		94F9F99C240E999D006C7EF2 /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		94F9F99E240E99DA006C7EF2 /* Message.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Message.storyboard; sourceTree = "<group>"; };
 		94F9F9A1240E9D2B006C7EF2 /* New.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = New.storyboard; sourceTree = "<group>"; };
+		94F9F9A424113DAB006C7EF2 /* BaseUIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseUIButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 		94F9F972240CF4E0006C7EF2 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				94F9F9A324113D37006C7EF2 /* View */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -173,6 +176,14 @@
 				94F9F9A1240E9D2B006C7EF2 /* New.storyboard */,
 			);
 			path = New;
+			sourceTree = "<group>";
+		};
+		94F9F9A324113D37006C7EF2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				94F9F9A424113DAB006C7EF2 /* BaseUIButton.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,6 +271,7 @@
 				94F9F982240D0A55006C7EF2 /* HomeViewController.swift in Sources */,
 				94F9F997240E940A006C7EF2 /* MainViewController.swift in Sources */,
 				94F9F98A240D172C006C7EF2 /* MainViewControllerByMethod.swift in Sources */,
+				94F9F9A524113DAB006C7EF2 /* BaseUIButton.swift in Sources */,
 				94F9F986240D0A8D006C7EF2 /* DiscoverViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
