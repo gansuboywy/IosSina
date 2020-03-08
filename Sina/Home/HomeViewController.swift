@@ -9,9 +9,12 @@
 import UIKit
 
 class HomeViewController: BaseViewController {
-
     //  MARK:- lazy variables
     private lazy var titleBtn : TitleButton = TitleButton()
+    private lazy var popupAnimation : PopupAnimation = PopupAnimation{
+        [weak self] (presented) -> () in
+        self?.titleBtn.isSelected = presented
+    }
 
     // MARK:- method
     override func viewDidLoad() {
@@ -27,6 +30,7 @@ class HomeViewController: BaseViewController {
     }
 }
 
+// MAKE:- define UI
 extension HomeViewController {
     private func setupNavigationBar()
     {
@@ -43,9 +47,24 @@ extension HomeViewController {
     }
 }
 
-
+// MAKE:- handle event
 extension HomeViewController {
     @objc private func titleBtnClick(titleBtn : TitleButton) {
+        // 1. change button status
         titleBtn.isSelected = !titleBtn.isSelected
+        
+        // 2. create popup controller
+        let Vc = PopupViewController()
+        
+        // 3. when modal window shows, the parent window will keep unchange
+        Vc.modalPresentationStyle = .custom
+        
+        // set transition delegate
+        Vc.transitioningDelegate = popupAnimation
+       
+        popupAnimation.presentedFrame = CGRect(x:  (view.frame.width - 180) / 2, y: 55, width: 180, height: 250)
+        // 3.popup controller
+        present(Vc, animated: true, completion: nil)
     }
 }
+

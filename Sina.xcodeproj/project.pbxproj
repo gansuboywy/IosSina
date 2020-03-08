@@ -7,8 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		62353103E5CFDCFFA94D87C8 /* Pods_Sina.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 604B3DE27E99EE70E9E682F7 /* Pods_Sina.framework */; };
 		943EF7ED24148CF1000908F5 /* BaseUIBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943EF7EC24148CF1000908F5 /* BaseUIBarButtonItem.swift */; };
 		943EF7F0241492B9000908F5 /* TitleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943EF7EF241492B9000908F5 /* TitleButton.swift */; };
+		943EF7F6241499AB000908F5 /* PopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943EF7F4241499AB000908F5 /* PopupViewController.swift */; };
+		943EF7F7241499AB000908F5 /* PopupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 943EF7F5241499AB000908F5 /* PopupViewController.xib */; };
+		94AB959D2414E60000507FBE /* PresentationControllerEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94AB959C2414E60000507FBE /* PresentationControllerEx.swift */; };
+		94F7693D24152827005C0B2D /* PopupAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F7693C24152827005C0B2D /* PopupAnimation.swift */; };
 		94F9F95F240CF3E7006C7EF2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F9F95E240CF3E7006C7EF2 /* AppDelegate.swift */; };
 		94F9F966240CF3E7006C7EF2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94F9F964240CF3E7006C7EF2 /* Main.storyboard */; };
 		94F9F968240CF3E7006C7EF2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94F9F967240CF3E7006C7EF2 /* Assets.xcassets */; };
@@ -34,8 +39,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		26E1CE2D4067FEBBFF027CD3 /* Pods-Sina.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sina.release.xcconfig"; path = "Target Support Files/Pods-Sina/Pods-Sina.release.xcconfig"; sourceTree = "<group>"; };
+		604B3DE27E99EE70E9E682F7 /* Pods_Sina.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sina.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		943EF7EC24148CF1000908F5 /* BaseUIBarButtonItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseUIBarButtonItem.swift; sourceTree = "<group>"; };
 		943EF7EF241492B9000908F5 /* TitleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleButton.swift; sourceTree = "<group>"; };
+		943EF7F4241499AB000908F5 /* PopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupViewController.swift; sourceTree = "<group>"; };
+		943EF7F5241499AB000908F5 /* PopupViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PopupViewController.xib; sourceTree = "<group>"; };
+		94AB959C2414E60000507FBE /* PresentationControllerEx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationControllerEx.swift; sourceTree = "<group>"; };
+		94F7693C24152827005C0B2D /* PopupAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupAnimation.swift; sourceTree = "<group>"; };
 		94F9F95B240CF3E6006C7EF2 /* Sina.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sina.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94F9F95E240CF3E7006C7EF2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		94F9F965240CF3E7006C7EF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -60,6 +71,7 @@
 		94F9F9A72413BC50006C7EF2 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		94F9F9AB2413C46D006C7EF2 /* VisitorView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VisitorView.xib; sourceTree = "<group>"; };
 		94F9F9AD2413C4E2006C7EF2 /* VisitorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisitorView.swift; sourceTree = "<group>"; };
+		E5DC2E63CD2237E61C645AF2 /* Pods-Sina.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sina.debug.xcconfig"; path = "Target Support Files/Pods-Sina/Pods-Sina.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,12 +79,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62353103E5CFDCFFA94D87C8 /* Pods_Sina.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0CB5F9A47435D42BCF3AE020 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				604B3DE27E99EE70E9E682F7 /* Pods_Sina.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		599B5ED140D0346BDB8091D5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E5DC2E63CD2237E61C645AF2 /* Pods-Sina.debug.xcconfig */,
+				26E1CE2D4067FEBBFF027CD3 /* Pods-Sina.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		943EF7EE24149289000908F5 /* custom */ = {
 			isa = PBXGroup;
 			children = (
@@ -81,11 +112,24 @@
 			path = custom;
 			sourceTree = "<group>";
 		};
+		943EF7F324149991000908F5 /* Popup */ = {
+			isa = PBXGroup;
+			children = (
+				943EF7F4241499AB000908F5 /* PopupViewController.swift */,
+				943EF7F5241499AB000908F5 /* PopupViewController.xib */,
+				94AB959C2414E60000507FBE /* PresentationControllerEx.swift */,
+				94F7693C24152827005C0B2D /* PopupAnimation.swift */,
+			);
+			path = Popup;
+			sourceTree = "<group>";
+		};
 		94F9F952240CF3E6006C7EF2 = {
 			isa = PBXGroup;
 			children = (
 				94F9F95D240CF3E6006C7EF2 /* Sina */,
 				94F9F95C240CF3E6006C7EF2 /* Products */,
+				599B5ED140D0346BDB8091D5 /* Pods */,
+				0CB5F9A47435D42BCF3AE020 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -157,6 +201,7 @@
 		94F9F976240CF521006C7EF2 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				943EF7F324149991000908F5 /* Popup */,
 				94F9F998240E992F006C7EF2 /* Home.storyboard */,
 				94F9F981240D0A55006C7EF2 /* HomeViewController.swift */,
 			);
@@ -224,9 +269,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 94F9F96F240CF3E7006C7EF2 /* Build configuration list for PBXNativeTarget "Sina" */;
 			buildPhases = (
+				826710DCE3D7112A42B3AAF2 /* [CP] Check Pods Manifest.lock */,
 				94F9F957240CF3E6006C7EF2 /* Sources */,
 				94F9F958240CF3E6006C7EF2 /* Frameworks */,
 				94F9F959240CF3E6006C7EF2 /* Resources */,
+				B93BB48448AA307C46F048FF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -277,6 +324,7 @@
 			files = (
 				94F9F96B240CF3E7006C7EF2 /* LaunchScreen.storyboard in Resources */,
 				94F9F9AC2413C46E006C7EF2 /* VisitorView.xib in Resources */,
+				943EF7F7241499AB000908F5 /* PopupViewController.xib in Resources */,
 				94F9F999240E992F006C7EF2 /* Home.storyboard in Resources */,
 				94F9F995240D51B3006C7EF2 /* MainVCSettings.json in Resources */,
 				94F9F968240CF3E7006C7EF2 /* Assets.xcassets in Resources */,
@@ -290,16 +338,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		826710DCE3D7112A42B3AAF2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Sina-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B93BB48448AA307C46F048FF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Sina/Pods-Sina-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Sina/Pods-Sina-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Sina/Pods-Sina-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		94F9F957240CF3E6006C7EF2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				943EF7F0241492B9000908F5 /* TitleButton.swift in Sources */,
+				94F7693D24152827005C0B2D /* PopupAnimation.swift in Sources */,
 				94F9F988240D0AAD006C7EF2 /* ProfileViewController.swift in Sources */,
 				94F9F95F240CF3E7006C7EF2 /* AppDelegate.swift in Sources */,
 				94F9F9A82413BC50006C7EF2 /* BaseViewController.swift in Sources */,
 				94F9F9AE2413C4E2006C7EF2 /* VisitorView.swift in Sources */,
+				943EF7F6241499AB000908F5 /* PopupViewController.swift in Sources */,
+				94AB959D2414E60000507FBE /* PresentationControllerEx.swift in Sources */,
 				94F9F98E240D1F1C006C7EF2 /* MainViewControllerByJson.swift in Sources */,
 				94F9F980240D041D006C7EF2 /* MainViewControllerByReflection.swift in Sources */,
 				94F9F984240D0A73006C7EF2 /* MessageViewController.swift in Sources */,
@@ -450,6 +543,7 @@
 		};
 		94F9F970240CF3E7006C7EF2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E5DC2E63CD2237E61C645AF2 /* Pods-Sina.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -469,6 +563,7 @@
 		};
 		94F9F971240CF3E7006C7EF2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26E1CE2D4067FEBBFF027CD3 /* Pods-Sina.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

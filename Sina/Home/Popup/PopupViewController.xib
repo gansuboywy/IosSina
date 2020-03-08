@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PopupViewController" customModule="Sina" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="301" height="403"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Kch-V1-elk">
+                    <rect key="frame" x="0.0" y="0.0" width="301" height="403"/>
+                    <color key="backgroundColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </imageView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="pBL-3g-HaP">
+                    <rect key="frame" x="10" y="10" width="281" height="383"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Kch-V1-elk" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="0gc-mU-YAo"/>
+                <constraint firstItem="pBL-3g-HaP" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="10" id="771-BC-hMd"/>
+                <constraint firstItem="Kch-V1-elk" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="Fz9-5v-RDA"/>
+                <constraint firstItem="pBL-3g-HaP" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="L7s-Tx-3mZ"/>
+                <constraint firstItem="Kch-V1-elk" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="NJH-0a-O0U"/>
+                <constraint firstItem="Kch-V1-elk" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="RbF-Bz-ZXt"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="pBL-3g-HaP" secondAttribute="bottom" constant="10" id="Xlv-0x-pgu"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="pBL-3g-HaP" secondAttribute="trailing" constant="10" id="rzE-yQ-PGj"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="64.799999999999997" y="0.44977511244377816"/>
+        </view>
+    </objects>
+</document>
