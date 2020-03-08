@@ -20,6 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // set color for all tab bar
         UITabBar.appearance().tintColor = UIColor.orange
+        UINavigationBar.appearance().tintColor = UIColor.orange
         
         /*
          the following code is used to lunach screen by code

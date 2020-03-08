@@ -23,7 +23,8 @@ class BaseViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        setupNavigationItems()
     }
     
     // MARK: - Table view data source
@@ -40,9 +41,35 @@ class BaseViewController: UITableViewController {
 
 }
 
+// MAKE:- set UI
 extension BaseViewController {
+    // set visitor window
     private func setupVistorView() {
 //        visitorView.backgroundColor = UIColor.purple
         view = visitorView
+        
+        visitorView.signUpBtn.addTarget(self, action: #selector(signUpBtnClick), for: .touchUpInside)
+        
+        visitorView.signInBtn.addTarget(self, action: #selector(signInBtnClick), for: .touchUpInside)
+        
+    }
+    
+    // set navigation item
+    private func setupNavigationItems() {
+        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Sign Up", style: .plain, target: self, action: #selector(signUpBtnClick))
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Sign In", style: .plain, target: self, action: #selector(signInBtnClick))
     }
 }
+
+// MAKE:- handle event
+extension BaseViewController {
+    @objc private func signUpBtnClick() {
+        print("signUpBtnClick")
+    }
+    
+    @objc private func signInBtnClick() {
+        print("signInBtnClick")
+    }
+}
+
+

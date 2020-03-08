@@ -21,6 +21,10 @@ class VisitorView: UIView {
     @IBOutlet weak var iconView: UIImageView!
     
     @IBOutlet weak var tipLabel: UILabel!
+    @IBOutlet weak var signUpBtn: UIButton!
+    
+    @IBOutlet weak var signInBtn: UIButton!
+    
     // MARK:- customize method
     func setupVisitorViewInfo(iconName : String, title : String) {
         
