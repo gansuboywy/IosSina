@@ -10,7 +10,10 @@ import UIKit
 
 class HomeViewController: BaseViewController {
 
+    //  MARK:- lazy variables
+    private lazy var titleBtn : TitleButton = TitleButton()
 
+    // MARK:- method
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -28,17 +31,21 @@ extension HomeViewController {
     private func setupNavigationBar()
     {
         // 1. set left item
-        let leftBtn = UIButton()
-        leftBtn.setImage(UIImage(named: "navigationbar_friendattention"), for: .normal)
-        leftBtn.setImage(UIImage(named: "navigationbar_friendattention_highlighted"), for: .highlighted)
-        leftBtn.sizeToFit()
-        navigationItem.leftBarButtonItem = UIBarButtonItem(customView: leftBtn)
+        navigationItem.leftBarButtonItem = UIBarButtonItem.init(imageName: "navigationbar_friendattention")
         
         // 2. set right item
-        let rightBtn = UIButton()
-        rightBtn.setImage(UIImage(named: "navigationbar_pop"), for: .normal)
-        rightBtn.setImage(UIImage(named: "navigationbar_pop_highlighted"), for: .highlighted)
-        rightBtn.sizeToFit()
-        navigationItem.leftBarButtonItem = UIBarButtonItem(customView: leftBtn)
+        navigationItem.rightBarButtonItem = UIBarButtonItem.init(imageName: "navigationbar_pop")
+        
+        // 3. set title button
+        titleBtn.setTitle("Alpha", for: .normal)
+        titleBtn.addTarget(self, action: #selector(titleBtnClick), for: .touchUpInside)
+        navigationItem.titleView = titleBtn
+    }
+}
+
+
+extension HomeViewController {
+    @objc private func titleBtnClick(titleBtn : TitleButton) {
+        titleBtn.isSelected = !titleBtn.isSelected
     }
 }
