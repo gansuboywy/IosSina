@@ -32,7 +32,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //        window?.rootViewController = MainViewController()
 //        // make window to display
 //        window?.makeKeyAndVisible()
-
+        
+        // MARK:- Test
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.rootViewController = TestViewController()
+        // make window to display
+        window?.makeKeyAndVisible()
         return true
     }
 

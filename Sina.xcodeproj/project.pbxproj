@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,8 @@
 		943EF7F7241499AB000908F5 /* PopupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 943EF7F5241499AB000908F5 /* PopupViewController.xib */; };
 		94AB959D2414E60000507FBE /* PresentationControllerEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94AB959C2414E60000507FBE /* PresentationControllerEx.swift */; };
 		94F7693D24152827005C0B2D /* PopupAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F7693C24152827005C0B2D /* PopupAnimation.swift */; };
+		94F7694024168C23005C0B2D /* NetworkTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F7693F24168C23005C0B2D /* NetworkTools.swift */; };
+		94F7694324169090005C0B2D /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F7694224169090005C0B2D /* TestViewController.swift */; };
 		94F9F95F240CF3E7006C7EF2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F9F95E240CF3E7006C7EF2 /* AppDelegate.swift */; };
 		94F9F966240CF3E7006C7EF2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94F9F964240CF3E7006C7EF2 /* Main.storyboard */; };
 		94F9F968240CF3E7006C7EF2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94F9F967240CF3E7006C7EF2 /* Assets.xcassets */; };
@@ -47,6 +49,8 @@
 		943EF7F5241499AB000908F5 /* PopupViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PopupViewController.xib; sourceTree = "<group>"; };
 		94AB959C2414E60000507FBE /* PresentationControllerEx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationControllerEx.swift; sourceTree = "<group>"; };
 		94F7693C24152827005C0B2D /* PopupAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupAnimation.swift; sourceTree = "<group>"; };
+		94F7693F24168C23005C0B2D /* NetworkTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkTools.swift; sourceTree = "<group>"; };
+		94F7694224169090005C0B2D /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		94F9F95B240CF3E6006C7EF2 /* Sina.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sina.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94F9F95E240CF3E7006C7EF2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		94F9F965240CF3E7006C7EF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -100,7 +104,6 @@
 				E5DC2E63CD2237E61C645AF2 /* Pods-Sina.debug.xcconfig */,
 				26E1CE2D4067FEBBFF027CD3 /* Pods-Sina.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -121,6 +124,22 @@
 				94F7693C24152827005C0B2D /* PopupAnimation.swift */,
 			);
 			path = Popup;
+			sourceTree = "<group>";
+		};
+		94F7693E24168BA7005C0B2D /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				94F7693F24168C23005C0B2D /* NetworkTools.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		94F769412416905B005C0B2D /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				94F7694224169090005C0B2D /* TestViewController.swift */,
+			);
+			path = Test;
 			sourceTree = "<group>";
 		};
 		94F9F952240CF3E6006C7EF2 = {
@@ -159,6 +178,8 @@
 				94F9F969240CF3E7006C7EF2 /* LaunchScreen.storyboard */,
 				94F9F96C240CF3E7006C7EF2 /* Info.plist */,
 				94F9F9A62413BBF9006C7EF2 /* Vistor */,
+				94F7693E24168BA7005C0B2D /* Network */,
+				94F769412416905B005C0B2D /* Test */,
 				94F9F97D240D0192006C7EF2 /* Resource */,
 			);
 			path = Sina;
@@ -386,6 +407,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				943EF7F0241492B9000908F5 /* TitleButton.swift in Sources */,
+				94F7694324169090005C0B2D /* TestViewController.swift in Sources */,
 				94F7693D24152827005C0B2D /* PopupAnimation.swift in Sources */,
 				94F9F988240D0AAD006C7EF2 /* ProfileViewController.swift in Sources */,
 				94F9F95F240CF3E7006C7EF2 /* AppDelegate.swift in Sources */,
@@ -399,6 +421,7 @@
 				94F9F982240D0A55006C7EF2 /* HomeViewController.swift in Sources */,
 				94F9F997240E940A006C7EF2 /* MainViewController.swift in Sources */,
 				94F9F98A240D172C006C7EF2 /* MainViewControllerByMethod.swift in Sources */,
+				94F7694024168C23005C0B2D /* NetworkTools.swift in Sources */,
 				94F9F9A524113DAB006C7EF2 /* BaseUIButton.swift in Sources */,
 				943EF7ED24148CF1000908F5 /* BaseUIBarButtonItem.swift in Sources */,
 				94F9F986240D0A8D006C7EF2 /* DiscoverViewController.swift in Sources */,
