@@ -27,17 +27,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
          in this system, we will use storyboard to lunach screen,
          so i comment the code below
          */
-//        /// instantiate window
+        /// instantiate window ( without storyboard )
 //        window = UIWindow(frame: UIScreen.main.bounds)
 //        window?.rootViewController = MainViewController()
 //        // make window to display
 //        window?.makeKeyAndVisible()
         
         // MARK:- Test
-        window = UIWindow(frame: UIScreen.main.bounds)
-        window?.rootViewController = TestViewController()
-        // make window to display
-        window?.makeKeyAndVisible()
+//        window = UIWindow(frame: UIScreen.main.bounds)
+//        window?.rootViewController = TestViewController()
+//        // make window to display
+//        window?.makeKeyAndVisible()
         return true
     }
 

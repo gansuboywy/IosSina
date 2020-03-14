@@ -16,6 +16,13 @@
 		94F7693D24152827005C0B2D /* PopupAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F7693C24152827005C0B2D /* PopupAnimation.swift */; };
 		94F7694024168C23005C0B2D /* NetworkTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F7693F24168C23005C0B2D /* NetworkTools.swift */; };
 		94F7694324169090005C0B2D /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F7694224169090005C0B2D /* TestViewController.swift */; };
+		94F769472418E4D4005C0B2D /* OAuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F769452418E4D4005C0B2D /* OAuthViewController.swift */; };
+		94F769482418E4D4005C0B2D /* OAuthViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94F769462418E4D4005C0B2D /* OAuthViewController.xib */; };
+		94F7694A2418EDA8005C0B2D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F769492418EDA8005C0B2D /* Constants.swift */; };
+		94F7694C241919E3005C0B2D /* UserAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F7694B241919E3005C0B2D /* UserAccount.swift */; };
+		94F7694E241A8186005C0B2D /* UserAccountUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F7694D241A8186005C0B2D /* UserAccountUtility.swift */; };
+		94F76952241CB256005C0B2D /* LoginUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F76951241CB256005C0B2D /* LoginUser.swift */; };
+		94F76954241CB349005C0B2D /* LoginUserUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F76953241CB349005C0B2D /* LoginUserUtility.swift */; };
 		94F9F95F240CF3E7006C7EF2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F9F95E240CF3E7006C7EF2 /* AppDelegate.swift */; };
 		94F9F966240CF3E7006C7EF2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94F9F964240CF3E7006C7EF2 /* Main.storyboard */; };
 		94F9F968240CF3E7006C7EF2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94F9F967240CF3E7006C7EF2 /* Assets.xcassets */; };
@@ -51,6 +58,13 @@
 		94F7693C24152827005C0B2D /* PopupAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupAnimation.swift; sourceTree = "<group>"; };
 		94F7693F24168C23005C0B2D /* NetworkTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkTools.swift; sourceTree = "<group>"; };
 		94F7694224169090005C0B2D /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		94F769452418E4D4005C0B2D /* OAuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OAuthViewController.swift; sourceTree = "<group>"; };
+		94F769462418E4D4005C0B2D /* OAuthViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OAuthViewController.xib; sourceTree = "<group>"; };
+		94F769492418EDA8005C0B2D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		94F7694B241919E3005C0B2D /* UserAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAccount.swift; sourceTree = "<group>"; };
+		94F7694D241A8186005C0B2D /* UserAccountUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAccountUtility.swift; sourceTree = "<group>"; };
+		94F76951241CB256005C0B2D /* LoginUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUser.swift; sourceTree = "<group>"; };
+		94F76953241CB349005C0B2D /* LoginUserUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUserUtility.swift; sourceTree = "<group>"; };
 		94F9F95B240CF3E6006C7EF2 /* Sina.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sina.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94F9F95E240CF3E7006C7EF2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		94F9F965240CF3E7006C7EF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -142,6 +156,19 @@
 			path = Test;
 			sourceTree = "<group>";
 		};
+		94F769442418E4A8005C0B2D /* OAuth */ = {
+			isa = PBXGroup;
+			children = (
+				94F769452418E4D4005C0B2D /* OAuthViewController.swift */,
+				94F769462418E4D4005C0B2D /* OAuthViewController.xib */,
+				94F7694B241919E3005C0B2D /* UserAccount.swift */,
+				94F7694D241A8186005C0B2D /* UserAccountUtility.swift */,
+				94F76951241CB256005C0B2D /* LoginUser.swift */,
+				94F76953241CB349005C0B2D /* LoginUserUtility.swift */,
+			);
+			path = OAuth;
+			sourceTree = "<group>";
+		};
 		94F9F952240CF3E6006C7EF2 = {
 			isa = PBXGroup;
 			children = (
@@ -178,6 +205,7 @@
 				94F9F969240CF3E7006C7EF2 /* LaunchScreen.storyboard */,
 				94F9F96C240CF3E7006C7EF2 /* Info.plist */,
 				94F9F9A62413BBF9006C7EF2 /* Vistor */,
+				94F769442418E4A8005C0B2D /* OAuth */,
 				94F7693E24168BA7005C0B2D /* Network */,
 				94F769412416905B005C0B2D /* Test */,
 				94F9F97D240D0192006C7EF2 /* Resource */,
@@ -197,6 +225,7 @@
 		94F9F973240CF4F9006C7EF2 /* Comm */ = {
 			isa = PBXGroup;
 			children = (
+				94F769492418EDA8005C0B2D /* Constants.swift */,
 			);
 			path = Comm;
 			sourceTree = "<group>";
@@ -347,6 +376,7 @@
 				94F9F9AC2413C46E006C7EF2 /* VisitorView.xib in Resources */,
 				943EF7F7241499AB000908F5 /* PopupViewController.xib in Resources */,
 				94F9F999240E992F006C7EF2 /* Home.storyboard in Resources */,
+				94F769482418E4D4005C0B2D /* OAuthViewController.xib in Resources */,
 				94F9F995240D51B3006C7EF2 /* MainVCSettings.json in Resources */,
 				94F9F968240CF3E7006C7EF2 /* Assets.xcassets in Resources */,
 				94F9F966240CF3E7006C7EF2 /* Main.storyboard in Resources */,
@@ -410,17 +440,23 @@
 				94F7694324169090005C0B2D /* TestViewController.swift in Sources */,
 				94F7693D24152827005C0B2D /* PopupAnimation.swift in Sources */,
 				94F9F988240D0AAD006C7EF2 /* ProfileViewController.swift in Sources */,
+				94F7694C241919E3005C0B2D /* UserAccount.swift in Sources */,
+				94F769472418E4D4005C0B2D /* OAuthViewController.swift in Sources */,
 				94F9F95F240CF3E7006C7EF2 /* AppDelegate.swift in Sources */,
 				94F9F9A82413BC50006C7EF2 /* BaseViewController.swift in Sources */,
+				94F76954241CB349005C0B2D /* LoginUserUtility.swift in Sources */,
 				94F9F9AE2413C4E2006C7EF2 /* VisitorView.swift in Sources */,
 				943EF7F6241499AB000908F5 /* PopupViewController.swift in Sources */,
 				94AB959D2414E60000507FBE /* PresentationControllerEx.swift in Sources */,
 				94F9F98E240D1F1C006C7EF2 /* MainViewControllerByJson.swift in Sources */,
+				94F7694A2418EDA8005C0B2D /* Constants.swift in Sources */,
 				94F9F980240D041D006C7EF2 /* MainViewControllerByReflection.swift in Sources */,
 				94F9F984240D0A73006C7EF2 /* MessageViewController.swift in Sources */,
 				94F9F982240D0A55006C7EF2 /* HomeViewController.swift in Sources */,
 				94F9F997240E940A006C7EF2 /* MainViewController.swift in Sources */,
 				94F9F98A240D172C006C7EF2 /* MainViewControllerByMethod.swift in Sources */,
+				94F76952241CB256005C0B2D /* LoginUser.swift in Sources */,
+				94F7694E241A8186005C0B2D /* UserAccountUtility.swift in Sources */,
 				94F7694024168C23005C0B2D /* NetworkTools.swift in Sources */,
 				94F9F9A524113DAB006C7EF2 /* BaseUIButton.swift in Sources */,
 				943EF7ED24148CF1000908F5 /* BaseUIBarButtonItem.swift in Sources */,

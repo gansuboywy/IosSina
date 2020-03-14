@@ -14,10 +14,11 @@ class BaseViewController: UITableViewController {
     lazy var visitorView : VisitorView = VisitorView.visitorView()
     
     // MARK:- defiine variables
-    var isLogin : Bool = false
+    var isLogin : Bool = UserAccountUtility.shareInstance.isLogin
     
     // MARK:- overload parent method
     override func loadView() {
+        
         isLogin ? super.loadView() : setupVistorView()
     }
     
@@ -69,6 +70,17 @@ extension BaseViewController {
     
     @objc private func signInBtnClick() {
         print("signInBtnClick")
+        
+        // 1. create authorization controller
+        let oauthVc = OAuthViewController()
+        
+        // 2.wrap controller into navigation controller
+        let oauthNavi = UINavigationController(rootViewController: oauthVc)
+        oauthNavi.modalPresentationStyle = .fullScreen
+        
+        // 3. popup controller
+        present(oauthNavi, animated: true, completion: nil)
+        
     }
 }
 
